@@ -1,0 +1,441 @@
+
+/* navbar */
+
+.navbar {
+    padding: 15px;
+    margin: 0 50px;
+}
+
+/* title////////////////////////////////////////////////// */
+
+.title-container {
+    display: flex;
+    margin-top: 10px;
+    height: 80vh;
+    background-color: #d7fbff;
+    gap: 30px;
+}
+
+.coding-foto {
+    width: 350px;
+    top: 200px;
+    margin-right: 130%;
+    position: relative; 
+
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes example {
+        0% {top: 20%;}
+       50% {top: 23%;}
+       100% {top: 20%;}
+    }
+
+
+.coding-intro {
+    margin-left: 20%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    max-width: 40%;
+    padding-top: 10%;
+    font-weight: 100;
+}
+
+.intro-p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+@media (max-width: 1215px) {
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        height: 80vh;
+        background-color: #d7fbff;
+        gap: 30px;
+        padding: 0;
+    }
+
+
+ .coding-intro {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    width: 300px;
+    margin: auto;
+    width: auto;
+    min-width: 350px;
+}
+
+.intro-p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}   
+
+    .coding-foto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        position: relative;
+        top: unset;
+        margin: auto;
+
+        animation-name: example;
+        animation-duration: 0s;
+        animation-iteration-count: infinite;
+        }
+      
+}
+
+
+
+/* About-me//////////////////////////////////////////////// */
+
+.about-me-container {
+    display: flex;
+    margin: 200px 200px 15px 200px;
+    gap: 40px; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-photo > * {
+    height: 310px
+}
+
+.about-me-span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1215px) {
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 50px 50px;
+}
+
+.about-me-photo > * {
+    height: 250px;
+}
+
+}
+
+
+
+
+
+
+
+/* button */
+
+.button-1 {
+    margin: 0 200px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    background: #fdf800;
+    padding: 8px 20px 10px 20px;
+    text-decoration: none;
+    border: 0px solid;
+  }
+  
+  .button-1:hover {
+    background: #ffd900;
+    text-decoration: none;
+  }
+
+@media (max-width: 1215px) {
+  .button-1 {
+    display: block;
+    position: relative;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ff800;
+   
+  }
+  
+  .button-1:hover {
+    background: #ffd900;
+    text-decoration: none;
+
+  }
+
+  }
+/* portfolio /////////////////////////////////// */
+
+.portolio-container {
+    margin: 200px 220px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.box-items {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; width: 300px;
+    overflow: hidden;
+
+    }
+
+
+/* BOX-1 */
+.picture-1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.picture-1:hover {
+    position: relative;
+    margin: auto;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+/* BOX-2 */
+
+ 
+.picture-2 {
+    object-fit: cover;
+    height: 250px; width: 300px;
+}
+
+.picture-2:hover {
+    object-fit: cover;
+    transform: scale(1.3);
+    transition: 1s;
+    opacity: .2;
+    border: 10px solid;
+}
+
+.text-photo-2 {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(53, 53, 53);
+    opacity: .8;
+    height: 250px; width: 300px;
+    color: white;
+}
+
+.box-2:hover .text-photo-2 {
+    visibility: visible;
+    transition: 1s;
+}
+
+.box-2:hover .picture-2 {
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+/* BOX 3 */
+
+.picture-3 {
+    object-fit: cover;
+    height: 250px; width: 300px;
+}
+
+.picture-3:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.text-photo-3 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(53, 53, 53);
+    opacity: .8;   
+    height: 250px; width: 300px;
+}
+
+.box-3:hover .text-photo-3 {
+    visibility: visible;
+}
+
+.box-3:hover .picture-3{
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+@media (max-width: 1215px) {
+    .portolio-container {
+        margin: 70px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+        position: relative;
+        gap: 25px;
+    
+        
+    }
+    
+    .box-items {
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px; width: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+        }
+
+        /* BOX-1 */
+.picture-1 {
+    display: flex;
+    object-fit: cover;
+    height: 200px; width: 300px;
+}
+
+.picture-1:hover {
+    position: relative;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+/* BOX-2 */
+
+ 
+.picture-2 {
+    object-fit: cover;
+    height: 200px; width: 300px;
+}
+
+.picture-2:hover {
+    object-fit: cover;
+    transform: scale(1.3);
+    transition: 1s;
+    opacity: .2;
+    border: 10px solid;
+}
+
+.text-photo-2 {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: rela;
+    visibility: hidden;
+    background-color: rgb(53, 53, 53);
+    opacity: .8;
+    height: 200px; width: 300px;
+    color: white;
+    border-radius: 4%;
+}
+
+.box-2:hover .text-photo-2 {
+    visibility: visible;
+    transition: 1s;
+}
+
+.box-2:hover .picture-2 {
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+/* BOX 3 */
+
+.picture-3 {
+    object-fit: cover;
+    height: 200px; width: 300px;
+}
+
+.picture-3:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.text-photo-3 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(53, 53, 53);
+    opacity: .8;   
+    height: 200px; width: 300px;
+    border-radius: 4%;
+}
+
+.box-3:hover .text-photo-3 {
+    visibility: visible;
+}
+
+.box-3:hover .picture-3{
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+}
+
+
+
+
+
+
+
+/* bottom-container //////////////////////////////////////////// */
+
+.bottom-container {
+    height: 25vh;
+    background-color: #d7fbff;
+    text-align: center;
+    line-height: 3;
+    
+}
+
+.icons {
+    width: 24px;
+    margin: 45px 20px 0 20px;
+}
+
+
